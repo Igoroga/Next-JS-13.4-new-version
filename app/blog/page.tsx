@@ -10,6 +10,8 @@ async function getData() {
     return response.json()
 }
 
+if(!Response){throw new Error('Error fetch')}
+
 export default async function BlogPage(){
     const posts = await getData()
 
